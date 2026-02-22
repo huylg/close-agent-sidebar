@@ -2,7 +2,7 @@
 
 A Cursor extension that exposes one command:
 
-- `Close Agent Sidebar` (`cursorAgentSidebar.close`)
+- `Close Agent Sidebar` (`workbench.action.closeUnifiedSidebar`)
 
 The command reads workspace-scoped Cursor state from `state.vscdb`:
 

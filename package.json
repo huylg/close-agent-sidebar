@@ -11,13 +11,13 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:cursorAgentSidebar.close"
+    "onCommand:workbench.action.closeUnifiedSidebar"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "cursorAgentSidebar.close",
+        "command": "workbench.action.closeUnifiedSidebar",
         "title": "Close Agent Sidebar"
       }
     ]

@@ -7,7 +7,7 @@ import { promisify } from 'node:util';
 
 const execFileAsync = promisify(execFile);
 
-const COMMAND_ID = 'cursorAgentSidebar.close';
+const COMMAND_ID = 'workbench.action.closeUnifiedSidebar';
 const CLOSE_UNIFIED_SIDEBAR_CMD = 'workbench.action.toggleUnifiedSidebar';
 const STATE_KEY = 'workbench.unifiedSidebar.hidden';
 const SQL = `SELECT CAST(value AS TEXT) FROM ItemTable WHERE key='${STATE_KEY}';`;
