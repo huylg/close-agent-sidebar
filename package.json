@@ -2,7 +2,7 @@
   "name": "close-agent-sidebar",
   "displayName": "Close Agent Sidebar",
   "description": "Adds a command to close Cursor unified agent sidebar based on workspace state.vscdb visibility.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "huyly",
   "engines": {
     "vscode": "^1.80.0"
