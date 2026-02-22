@@ -1,0 +1,36 @@
+{
+  "name": "close-agent-sidebar",
+  "displayName": "Close Agent Sidebar",
+  "description": "Adds a command to close Cursor unified agent sidebar based on workspace state.vscdb visibility.",
+  "version": "0.0.1",
+  "publisher": "huyly",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:cursorAgentSidebar.close"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cursorAgentSidebar.close",
+        "title": "Close Agent Sidebar"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "esbuild src/extension.ts --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
+    "watch": "esbuild src/extension.ts --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node --watch",
+    "pretest": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.80.0",
+    "esbuild": "^0.20.0"
+  }
+}
