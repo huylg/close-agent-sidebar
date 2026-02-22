@@ -11,7 +11,7 @@ The command reads workspace-scoped Cursor state from `state.vscdb`:
 
 Behavior:
 
-- `false` -> unified sidebar is visible -> runs `workbench.action.closeUnifiedSidebar`
+- `false` -> unified sidebar is visible -> runs `workbench.action.toggleUnifiedSidebar`
 - `true` -> unified sidebar already hidden -> no-op
 - missing/invalid state or query errors -> no-op
 
